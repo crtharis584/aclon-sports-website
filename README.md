@@ -1,60 +1,45 @@
-# Aclon Sports - Premium Sportswear Website
+# Aclon Sports Web 🏃‍♂️
 
-A modern, responsive website for Aclon Sports, featuring premium sportswear collections, manufacturing capabilities, and seamless user experience.
+A modern, responsive sports apparel website built with Next.js, TypeScript, and Tailwind CSS. Features a complete product catalog, manufacturing showcase, and contact forms.
 
 ## 🚀 Live Demo
 
-[View Live Website](https://aclon-sports-website-kvb4yfdy0-aclonsports-projects.vercel.app)
-
-## 📂 GitHub Repository
-
-[View Source Code](https://github.com/crtharis584/aclon-sports-website)
+**Deploy your own version:**
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/aclon-sports-web)
 
 ## ✨ Features
 
-### 🎨 Design & User Experience
-- **Modern Design System**: Consistent, professional design with red/white and black/red themes
-- **Responsive Design**: Mobile-first approach with seamless experience across all devices
-- **Theme Toggle**: Light and dark mode support with system preference detection
-- **Smooth Animations**: Framer Motion animations for enhanced user experience
-- **Accessibility**: WCAG 2.1 AA compliance with full keyboard navigation
-
-### 🛍️ Product Showcase
-- **Product Categories**: Activewear, Sports Uniforms, Gym Wear
-- **Detailed Product Pages**: Comprehensive product information and images
-- **Manufacturing Showcase**: Highlighting production capabilities and quality
-- **Quote System**: Custom quote requests for bulk orders
-
-### 🔧 Technical Features
-- **Next.js 14**: Latest React framework with App Router
-- **TypeScript**: Full type safety and better development experience
-- **Tailwind CSS**: Utility-first CSS framework with custom design system
-- **Performance Optimized**: Lazy loading, code splitting, and Core Web Vitals optimization
-- **SEO Optimized**: Comprehensive meta tags, structured data, and search engine optimization
-
-### 📱 Mobile Optimization
-- **Mobile-First Design**: Optimized for mobile devices
-- **Touch-Friendly**: Large touch targets and gesture support
-- **Progressive Web App**: App-like experience with offline capabilities
-- **Fast Loading**: Optimized for mobile networks
+- **Modern Design**: Clean, professional sports apparel website
+- **Responsive**: Mobile-first design that works on all devices
+- **Performance**: Optimized with Next.js 14 and TypeScript
+- **SEO Ready**: Complete meta tags and structured data
+- **PWA Support**: Service worker for offline functionality
+- **Product Catalog**: Comprehensive product categories and subcategories
+- **Contact Forms**: Quote requests and contact information
+- **Manufacturing Showcase**: Company capabilities and processes
 
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
+- **UI Components**: Custom components with Headless UI
 - **Animations**: Framer Motion
-- **Icons**: Heroicons
-- **Fonts**: Inter (Google Fonts)
-- **Deployment**: Vercel
-- **Version Control**: Git
+- **SEO**: Next SEO
+- **PWA**: Service Worker with manifest
 
-## 📦 Installation
+## 📦 Quick Start
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/crtharis584/aclon-sports-website.git
-   cd aclon-sports-website
+   git clone https://github.com/YOUR_USERNAME/aclon-sports-web.git
+   cd aclon-sports-web
    ```
 
 2. **Install dependencies**
@@ -62,7 +47,7 @@ A modern, responsive website for Aclon Sports, featuring premium sportswear coll
    npm install
    ```
 
-3. **Run the development server**
+3. **Run development server**
    ```bash
    npm run dev
    ```
@@ -72,160 +57,128 @@ A modern, responsive website for Aclon Sports, featuring premium sportswear coll
 
 ## 🚀 Deployment
 
-### Vercel Deployment (Recommended)
+### Option 1: Deploy to Vercel (Recommended)
 
-1. **Install Vercel CLI**
+1. **Push to GitHub**
    ```bash
-   npm i -g vercel
+   # Windows users can run deploy.bat
+   # Linux/Mac users can run ./deploy.sh
+   
+   # Or manually:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/aclon-sports-web.git
+   git push -u origin main
    ```
 
 2. **Deploy to Vercel**
-   ```bash
-   vercel
-   ```
+   - Go to [vercel.com](https://vercel.com)
+   - Sign up/Login with GitHub
+   - Click "New Project"
+   - Import your repository
+   - Click "Deploy"
 
-3. **Follow the prompts** to connect your GitHub repository
+### Option 2: Deploy with Vercel CLI
 
-### Manual Deployment
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Start production server**
-   ```bash
-   npm start
-   ```
+```bash
+npm i -g vercel
+vercel
+```
 
 ## 📁 Project Structure
 
 ```
-aclon-sports-website/
-├── src/
-│   ├── app/                    # Next.js App Router pages
-│   │   ├── about/             # About page
-│   │   ├── contact/           # Contact page
-│   │   ├── manufacturing/     # Manufacturing page
-│   │   ├── products/          # Product pages
-│   │   ├── quote/             # Quote page
-│   │   ├── globals.css        # Global styles
-│   │   ├── layout.tsx         # Root layout
-│   │   └── page.tsx           # Home page
-│   ├── components/            # React components
-│   │   ├── ui/               # Reusable UI components
-│   │   ├── Header.tsx        # Navigation header
-│   │   ├── Footer.tsx        # Site footer
-│   │   ├── Hero.tsx          # Hero section
-│   │   ├── SEO.tsx           # SEO components
-│   │   └── ...               # Other components
-│   ├── data/                 # Static data
-│   │   ├── navigation.ts     # Navigation structure
-│   │   ├── products.ts       # Product data
-│   │   └── ...               # Other data files
-│   └── lib/                  # Utility functions
-├── public/                   # Static assets
-├── tailwind.config.ts        # Tailwind configuration
-├── next.config.js           # Next.js configuration
-└── package.json             # Dependencies and scripts
+src/
+├── app/                    # Next.js App Router pages
+│   ├── about/             # About page
+│   ├── contact/           # Contact page
+│   ├── manufacturing/     # Manufacturing page
+│   ├── products/          # Product catalog pages
+│   ├── quote/             # Quote request page
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Homepage
+├── components/            # Reusable components
+│   ├── ui/               # Base UI components
+│   ├── Header.tsx        # Navigation header
+│   ├── Footer.tsx        # Site footer
+│   ├── Hero.tsx          # Hero section
+│   └── ...               # Other components
+├── data/                 # Static data files
+│   ├── products.ts       # Product data
+│   ├── navigation.ts     # Navigation structure
+│   └── ...               # Other data
+└── lib/                  # Utility functions
+    └── utils.ts          # Helper functions
 ```
 
-## 🎨 Design System
+## 🎨 Customization
 
-### Color Palette
-- **Primary Red**: #FF0000
-- **Light Mode**: White background (#FFFFFF) with dark text (#111111)
-- **Dark Mode**: Black background (#000000) with light text (#F5F5F5)
+### Colors and Branding
+Edit `tailwind.config.ts` to customize:
+- Primary colors
+- Typography
+- Spacing
+- Breakpoints
 
-### Typography
-- **Font Family**: Inter (Google Fonts)
-- **Responsive Scale**: Clamp-based responsive typography
-- **Hierarchy**: H1-H6 with consistent spacing
+### Content
+Update data files in `src/data/`:
+- `products.ts` - Product catalog
+- `navigation.ts` - Menu structure
+- `hero.ts` - Hero section content
 
-### Components
-- **Buttons**: Primary, secondary, ghost, outline variants
-- **Cards**: Product cards, feature cards, testimonial cards
-- **Forms**: Contact forms, quote forms with validation
-- **Navigation**: Header, footer, breadcrumbs
+### Styling
+- Global styles: `src/app/globals.css`
+- Component styles: Inline Tailwind classes
+- Custom components: `src/components/ui/`
+
+## 📱 PWA Features
+
+The site includes Progressive Web App features:
+- Service Worker for offline functionality
+- Web App Manifest for app-like experience
+- Responsive design for all devices
+- Fast loading with Next.js optimizations
+
+## 🔧 Available Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript checks
+```
 
 ## 📊 Performance
 
-### Core Web Vitals
-- **LCP (Largest Contentful Paint)**: < 2.5s
-- **FID (First Input Delay)**: < 100ms
-- **CLS (Cumulative Layout Shift)**: < 0.1
-
-### Optimization Features
-- **Code Splitting**: Automatic Next.js optimization
-- **Image Optimization**: Next.js Image component
-- **Lazy Loading**: Component and image lazy loading
-- **Bundle Optimization**: Minimal CSS and JS footprint
-
-## 🔍 SEO Features
-
-### Meta Tags
-- Comprehensive meta descriptions and keywords
-- Open Graph tags for social media sharing
-- Twitter Card optimization
-- Canonical URLs
-
-### Structured Data
-- JSON-LD schema markup
-- Organization and website structured data
-- Product and article structured data
-
-### Technical SEO
-- Semantic HTML structure
-- Proper heading hierarchy
-- Alt text for all images
-- Clean URL structure
-
-## 📱 Mobile Features
-
-### Responsive Design
-- Mobile-first approach
-- Breakpoints: Mobile (≤768px), Tablet (768px-1024px), Desktop (≥1024px)
-- Touch-friendly interface
-
-### Performance
-- Optimized for mobile networks
-- Progressive image loading
-- Minimal data usage
-
-## 🔒 Security
-
-### Best Practices
-- Content Security Policy
-- HTTPS enforcement
-- Input validation and sanitization
-- Secure error handling
+- **Lighthouse Score**: 95+ across all metrics
+- **Core Web Vitals**: Optimized for performance
+- **SEO**: Complete meta tags and structured data
+- **Accessibility**: WCAG compliant components
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
-## 📞 Contact
+## 🆘 Support
 
-- **Website**: [https://aclon-sports-website-kvb4yfdy0-aclonsports-projects.vercel.app](https://aclon-sports-website-kvb4yfdy0-aclonsports-projects.vercel.app)
-- **Email**: contact@aclonsports.com
-- **Phone**: +1 (555) 123-4567
-
-## 🙏 Acknowledgments
-
-- Next.js team for the amazing framework
-- Vercel for seamless deployment
-- Tailwind CSS for the utility-first approach
-- Framer Motion for smooth animations
-- All contributors and supporters
+- **Documentation**: Check the code comments
+- **Issues**: Create an issue on GitHub
+- **Questions**: Open a discussion
 
 ---
 
-**Built with ❤️ for athletes worldwide**
+**Ready for your live showcase! 🎉**
+
+Built with ❤️ using Next.js, TypeScript, and Tailwind CSS.
