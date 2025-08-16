@@ -4,7 +4,11 @@ A modern, responsive website for Aclon Sports, featuring premium sportswear coll
 
 ## 🚀 Live Demo
 
-[View Live Website](https://aclon-sports.vercel.app)
+[View Live Website](https://aclon-sports-website-kvb4yfdy0-aclonsports-projects.vercel.app)
+
+## 📂 GitHub Repository
+
+[View Source Code](https://github.com/crtharis584/aclon-sports-website)
 
 ## ✨ Features
 
@@ -49,8 +53,8 @@ A modern, responsive website for Aclon Sports, featuring premium sportswear coll
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/aclon-sports.git
-   cd aclon-sports
+   git clone https://github.com/crtharis584/aclon-sports-website.git
+   cd aclon-sports-website
    ```
 
 2. **Install dependencies**
@@ -97,7 +101,7 @@ A modern, responsive website for Aclon Sports, featuring premium sportswear coll
 ## 📁 Project Structure
 
 ```
-aclon-sports/
+aclon-sports-website/
 ├── src/
 │   ├── app/                    # Next.js App Router pages
 │   │   ├── about/             # About page
@@ -210,7 +214,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Website**: [https://aclon-sports.vercel.app](https://aclon-sports.vercel.app)
+- **Website**: [https://aclon-sports-website-kvb4yfdy0-aclonsports-projects.vercel.app](https://aclon-sports-website-kvb4yfdy0-aclonsports-projects.vercel.app)
 - **Email**: contact@aclonsports.com
 - **Phone**: +1 (555) 123-4567
 
